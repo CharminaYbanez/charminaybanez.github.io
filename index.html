@@ -1,227 +1,246 @@
 <!DOCTYPE HTML>
 <!--
-	Prologue by HTML5 UP
+	Based on Prologue by HTML5 UP
 	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Free for personal and commercial use under the CCA 3.0 license
 -->
-<html>
+<html lang="en">
 	<head>
-		<title>Charmina Ybanez - Web Portfolio</title>
+		<title>Charmina Ybanez | Data Analyst</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Charmina Ybanez's data analytics portfolio: SQL, Python, Power BI, economics, and business intelligence." />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			.project-group { margin: 4rem 0 1rem; text-align: left; }
+			.project-group:first-of-type { margin-top: 2rem; }
+			.project-group h3 { font-weight: 600; font-size: 1.25rem; margin-bottom: .5rem; }
+			.project-group > p { font-size: .95rem; margin-bottom: 1.75rem; }
+			.project-card { background: #fff; height: 100%; text-align: left; }
+			.project-card img { aspect-ratio: 16 / 9; object-fit: cover; }
+			.project-card .project-copy { padding: 1.35rem 1.5rem 1.5rem; }
+			.project-card h4 { color: #27313a; font-size: 1.1rem; font-weight: 600; line-height: 1.35; margin-bottom: .5rem; }
+			.project-card .eyebrow { color: #65717a; font-size: .78rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
+			.project-card p { font-size: .92rem; line-height: 1.55; margin: .65rem 0 1rem; }
+			.project-card a.button { font-size: .78rem; padding: .55rem 1.1rem; }
+			.project-card--featured { box-shadow: 0 .2rem 1rem rgba(0,0,0,.12); }
+			.project-card--featured .project-copy { padding: 1.65rem 1.75rem 1.75rem; }
+			.project-card--featured h4 { font-size: 1.4rem; }
+			.project-card--featured img { max-height: 455px; object-fit: cover; object-position: top; }
+			.text-card { border-top: solid 4px #139ef3; }
+			.contact-links { display: flex; flex-wrap: wrap; gap: .75rem; justify-content: center; }
+			.contact-links .button { margin: 0; }
+			.skills-list { font-size: .95rem; margin: 1.25rem auto 0; max-width: 800px; }
+			.intro-profile { align-items: center; display: flex; gap: 2.25rem; justify-content: center; margin: 0 auto; max-width: 58rem; text-align: left; }
+			.intro-profile-copy { max-width: 39rem; }
+			.hero-headshot { flex: 0 0 11rem; margin: 0; }
+			.hero-headshot img { border: .25rem solid rgba(255,255,255,.85); border-radius: 50%; box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.25); }
+			@media screen and (max-width: 736px) {
+				.project-group { margin-top: 3rem; }
+				.project-card--featured h4 { font-size: 1.2rem; }
+				.intro-profile { flex-direction: column-reverse; gap: 1.25rem; text-align: center; }
+				.hero-headshot { flex-basis: 9rem; width: 9rem; }
+			}
+		</style>
 	</head>
 	<body class="is-preload">
- 
+
 		<!-- Header -->
-			<div id="header">
-
-				<div class="top">
-
-					<!-- Logo -->
-						<div id="logo">
-							<span class="image avatar60"><img src="images/mina1.jpg" alt="" /></span>
-							<h1 id="title">Charmina Ybanez</h1>
-							<p>Etobicoke, Ontario</p>
-						</div>
-
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
-								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
-								<li><a href="#charlie" id="about-link"><span class="icon solid fa-paw">Charlie</span></a></li>
-							</ul>
-						</nav>
-
+		<div id="header">
+			<div class="top">
+				<div id="logo">
+					<span class="image avatar60"><img src="images/mna-logo.jpg" alt="MNA personal mark" /></span>
+					<h1 id="title">Charmina Ybanez</h1>
+					<p>Calgary, Alberta, Canada</p>
 				</div>
 
-				<div class="bottom">
-
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="https://github.com/CharminaYbanez" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							<li><a href="https://www.linkedin.com/in/charminaybanez/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="mailto:ybanezcharmina@outlook.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-
-				</div>
-
+				<nav id="nav" aria-label="Primary navigation">
+					<ul>
+						<li><a href="#top" id="top-link"><span class="icon solid fa-home">Home</span></a></li>
+						<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-chart-bar">Projects</span></a></li>
+						<li><a href="#about" id="about-link"><span class="icon solid fa-user">About</span></a></li>
+						<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+					</ul>
+				</nav>
 			</div>
+
+			<div class="bottom">
+				<ul class="icons">
+					<li><a href="https://github.com/CharminaYbanez" class="icon brands fa-github" aria-label="GitHub"><span class="label">GitHub</span></a></li>
+					<li><a href="https://www.linkedin.com/in/charminaybanez/" class="icon brands fa-linkedin" aria-label="LinkedIn"><span class="label">LinkedIn</span></a></li>
+					<li><a href="mailto:charmina.ybanez@outlook.com" class="icon solid fa-envelope" aria-label="Email"><span class="label">Email</span></a></li>
+				</ul>
+			</div>
+		</div>
 
 		<!-- Main -->
-			<div id="main">
-
-				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<div class="container">
-
-							<header>
-								<h2 class="alt">Hi! I'm <strong>Charmina</strong>.</h2>
-								<p>Analytical and highly qualified, I have a Bachelor of Economics degree from the University of Calgary and 5+ years of professional experience.</p>
-							</header>
-
-							<footer>
-								<a href="https://1drv.ms/b/s!AjS4bAnG3mnbgbF3XFh8NeHYR-kS-g" class="button scrolly">Resume</a>
-							</footer>
-
-						</div>
-					</section>
-
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
-						<div class="container">
-
-							<header>
-								<h2>Portfolio</h2>
-							</header>
-							<p></p>
-							<div class="row">
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="https://1drv.ms/u/s!AjS4bAnG3mnbgbUt-utLrKyJAy1PpA?e=GzoT3q" class="image fit"><img src="images/3.jpg" alt="" /></a>
-										<header>
-											<h3>OCTAGON - Kickstarter Campaign</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="https://1drv.ms/u/s!AjS4bAnG3mnbgbN4uB7QUGlM1LW6ug?e=2tVqmO" class="image fit"><img src="images/credentials-icon-3.jpg" alt="" /></a>
-										<header>
-											<h3>Credentials</h3>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="https://1drv.ms/u/s!AjS4bAnG3mnbgbUsXQc-QjfWI9rL6Q?e=k3033p" class="image fit"><img src="images/4.jpg" alt="" /></a>
-										<header>
-											<h3>DAT206x - Microsoft edX</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="https://1drv.ms/u/s!AjS4bAnG3mnbgbN59aMTyQZm4tIcaQ?e=xMgOzc" class="image fit"><img src="images/5.jpg" alt="" /></a>
-										<header>
-											<h3>University Projects</h3>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="https://1drv.ms/u/s!AjS4bAnG3mnbgbYa8AiC-b8jCaHS0g?e=Jmx2PW" class="image fit"><img src="images/uc.png" alt="" /></a>
-										<header>
-											<h3>Titanic - COMING SOON</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="https://1drv.ms/u/s!AjS4bAnG3mnbgbN61LAyqLgO72z-AQ?e=yz3Ex6" class="image fit"><img src="images/6.png" alt="" /></a>
-										<header>
-											<h3>Self-Learning Projects</h3>
-										</header>
-									</article>
-								</div>
-							</div>
-
-						</div>
-					</section>
-
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
-
-							<header>
-								<h2>About Me</h2>
-							</header>
-
-							<span class="image"><img src="images/7.jpg" alt="" /></span>
-							<p>I’m interested in data science, finance, economics, and statistics.
-							   I’m currently learning Life License Qualification Program (LLQP).
-							   I’m looking to collaborate on another small data project that I could add to my github data - web portfolio.
-							</p>
-
-						</div>
-					</section>
-
-				<!-- Charlie -->
-				<section id="Charlie" class="four">
-					<div class="container">
-
-						<header>
-							<h2>Charlie</h2>
+		<main id="main">
+			<section id="top" class="one dark cover">
+				<div class="container">
+					<div class="intro-profile">
+						<header class="intro-profile-copy">
+							<h2 class="alt">Hi, I'm <strong>Charmina</strong>.</h2>
+							<p><strong>Data Analyst | Economics | Business Intelligence</strong></p>
+							<p>I build clear, reproducible analysis using SQL, Python, Power BI, and Excel—grounded in data validation, stakeholder questions, and practical business communication.</p>
 						</header>
-						<article class="item"><span class="image"><img src="images/1010.jpg" alt="" /></span></article>
-						<p>The best kitty in the world.</p>
+						<span class="image hero-headshot"><img src="images/charmina-headshot.jpg" alt="Professional portrait of Charmina Ybanez" /></span>
+					</div>
+					<footer>
+						<a href="#portfolio" class="button scrolly">View projects</a>
+						<a href="assets/documents/charmina_ybanez_ats_analytics_resume.pdf" class="button" target="_blank" rel="noopener">Download resume (PDF)</a>
+					</footer>
+				</div>
+			</section>
 
+			<section id="portfolio" class="two">
+				<div class="container">
+					<header>
+						<h2>Project Portfolio</h2>
+						<p>Selected work in analytics, economics research, and strategy. Projects are organized by purpose so current analytics evidence remains easy to find.</p>
+					</header>
+
+					<div class="project-group">
+						<h3>Featured Analytics</h3>
+						<p>End-to-end and business-focused analytics work.</p>
+						<article class="item project-card project-card--featured">
+							<img src="images/alberta-home-insurance-dashboard.png" alt="Power BI executive dashboard for the Alberta Home Insurance Premium Pressure Monitor" />
+							<div class="project-copy">
+								<div class="eyebrow">SQL · Python · Power BI · 2016–2025</div>
+								<h4>Alberta Home Insurance Premium Pressure Monitor</h4>
+								<p>A stakeholder-focused monitoring project assessing whether Alberta home insurance CPI growth diverged from inflation, national insurance trends, and selected cost and catastrophe context. Built with a SQLite warehouse, SQL quality checks, Python analysis, and a two-page Power BI dashboard.</p>
+								<a class="button" href="https://github.com/CharminaYbanez/AnalyticsPortfolio">View GitHub project</a>
+							</div>
+						</article>
+						<div class="row">
+							<div class="col-6 col-12-mobile">
+								<article class="item project-card">
+									<a class="image fit" href="https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvYy9kYjY5ZGVjNjA5NmNiODM0L0lnQTB1R3dKeHQ1cElJRGI5MWtBQUFBQUFjVWl2Z1U2SGFhYkZBdHdwdkFJMTFJP2U9aWJ4Q252&amp;id=DB69DEC6096CB834%2123213&amp;cid=DB69DEC6096CB834&amp;sb=name&amp;sd=1"><img src="images/3.jpg" alt="Octagon Kickstarter campaign analysis dashboard" /></a>
+									<div class="project-copy">
+										<div class="eyebrow">SQL · Power BI · 2022</div>
+										<h4>Octagon Kickstarter Campaign Analysis</h4>
+										<p>Independent analytics project completed for a BrainStation admissions challenge, examining Kickstarter campaign performance and patterns in category success and pledged funding.</p>
+										<a class="button" href="https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvYy9kYjY5ZGVjNjA5NmNiODM0L0lnQTB1R3dKeHQ1cElJRGI5MWtBQUFBQUFjVWl2Z1U2SGFhYkZBdHdwdkFJMTFJP2U9aWJ4Q252&amp;id=DB69DEC6096CB834%2123213&amp;cid=DB69DEC6096CB834&amp;sb=name&amp;sd=1">View project folder</a>
+									</div>
+								</article>
+							</div>
+							<div class="col-6 col-12-mobile">
+								<article class="item project-card">
+									<a class="image fit" href="https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvYy9kYjY5ZGVjNjA5NmNiODM0L0lnQTB1R3dKeHQ1cElJRGI5MWtBQUFBQUFjVWl2Z1U2SGFhYkZBdHdwdkFJMTFJP2U9aWJ4Q252&amp;id=DB69DEC6096CB834%2123212&amp;cid=DB69DEC6096CB834&amp;sb=name&amp;sd=1"><img src="images/4.jpg" alt="Excel charts and analysis" /></a>
+									<div class="project-copy">
+										<div class="eyebrow">Technical Skills Showcase</div>
+										<h4>Advanced Excel Analytics Showcase</h4>
+										<p>Applied Excel techniques for financial modeling, project evaluation, scenario and sensitivity analysis, PivotTables, database management, and business reporting.</p>
+										<a class="button" href="https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvYy9kYjY5ZGVjNjA5NmNiODM0L0lnQTB1R3dKeHQ1cElJRGI5MWtBQUFBQUFjVWl2Z1U2SGFhYkZBdHdwdkFJMTFJP2U9aWJ4Q252&amp;id=DB69DEC6096CB834%2123212&amp;cid=DB69DEC6096CB834&amp;sb=name&amp;sd=1">View project folder</a>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+
+					<div class="project-group">
+						<h3>Economics Research</h3>
+						<p>Academic research demonstrating quantitative reasoning, policy analysis, and evidence-based interpretation.</p>
+						<div class="row">
+							<div class="col-6 col-12-mobile">
+								<article class="item project-card text-card">
+									<div class="project-copy">
+										<div class="eyebrow">Excel · Regression Analysis · Statistics · 2019</div>
+										<h4>Pharmaceutical R&amp;D and Drug Pricing</h4>
+										<p>Empirical study of the relationship between pharmaceutical R&amp;D expenditures and final sale prices in high-income countries, using secondary data, simple linear regression, correlation, covariance, and F-test analysis.</p>
+									</div>
+								</article>
+							</div>
+							<div class="col-6 col-12-mobile">
+								<article class="item project-card text-card">
+									<div class="project-copy">
+										<div class="eyebrow">Policy Analysis · 2018</div>
+										<h4>Fuel-Policy Analysis</h4>
+										<p>Analysis of carbon-tax, renewable-fuel, and fuel-economy standards, considering producer behaviour, consumer demand, alternative energy, environmental externalities, and policy trade-offs.</p>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+
+					<div class="project-group">
+						<h3>Creative Strategy &amp; Entrepreneurship</h3>
+						<p>Earlier work in audience research, campaign strategy, and self-directed creative practice.</p>
 						<div class="row">
 							<div class="col-4 col-12-mobile">
-								<article class="item">
-									<span class="image fit"><img src="images/12.jpg" alt="" /></span>
+								<article class="item project-card">
+									<span class="image fit"><img src="images/clipper-thesis-front-view.jpg" alt="Front and perspective renderings from the Clipper visual merchandising thesis" /></span>
+									<div class="project-copy">
+										<div class="eyebrow">Award-Winning Academic Thesis</div>
+										<h4>Clipper Visual Merchandising &amp; Promotions Campaign</h4>
+										<p>End-to-end campaign combining surveys, interviews, market and competitor research, strategy, creative deliverables, and a scaled store mock-up developed using blueprints with the company’s permission.</p>
+									</div>
 								</article>
 							</div>
-						
 							<div class="col-4 col-12-mobile">
-								<article class="item">
-									<span class="image fit"><img src="images/8.jpg" alt="" /></span>
-								</article>
-								<article class="item">
-									<span class="image fit"><img src="images/15.jpg" alt="" /></span>
+								<article class="item project-card">
+									<a class="image fit" href="https://acakerie.wixsite.com/minascakerie"><img src="images/minas-cakerie-logo.jpg" alt="Mina's Cakerie logo" /></a>
+									<div class="project-copy">
+										<div class="eyebrow">Independent Home-Baking Project</div>
+										<h4>Mina’s Cakerie</h4>
+										<p>Archived custom-cake microbusiness operated while studying Economics and working part-time. Completed 14 paid fondant-cake orders, plus two wedding cakes created as gifts; also made occasion and holiday cakes for friends and family. Not currently accepting orders.</p>
+										<a class="button" href="https://acakerie.wixsite.com/minascakerie">Visit project</a>
+									</div>
 								</article>
 							</div>
-						
 							<div class="col-4 col-12-mobile">
-								<article class="item">
-									<span class="image fit"><img src="images/9.jpg" alt="" /></span>
+								<article class="item project-card">
+									<a class="image fit" href="https://adjustpointshoot.tumblr.com"><img src="images/adjust-point-shoot-panning.jpg" alt="Panning photograph of a motorcyclist, created for an advertising photography course" /></a>
+									<div class="project-copy">
+										<div class="eyebrow">Advertising Photography · A+</div>
+										<h4>Adjust, Point, Shoot</h4>
+										<p>Photography and visual-storytelling archive, including an A+ panning-photography image created during BFA Advertising studies at the University of Santo Tomas in Manila.</p>
+										<a class="button" href="https://adjustpointshoot.tumblr.com">Visit project</a>
+									</div>
 								</article>
 							</div>
 						</div>
-
 					</div>
-				</section>
+				</div>
+			</section>
 
-				<!-- Contact -->
-					<section id="contact" class="five">
-						<div class="container">
+			<section id="about" class="three">
+				<div class="container">
+					<header>
+						<h2>About</h2>
+					</header>
+					<p>I am a Calgary-based analyst with a Bachelor of Arts in Economics and experience across insurance, business operations, sales, and customer service. My project work focuses on turning structured data into practical decision support while documenting assumptions, data-quality checks, limitations, and next steps.</p>
+					<p class="skills-list"><strong>Technical foundations:</strong> SQL, SQLite, Python, pandas, NumPy, Power BI, Excel, statistics, dashboard design, data validation, and stakeholder communication.</p>
+					<p class="skills-list"><strong>Credentials:</strong> Google Data Analytics Professional Certificate, Google/Coursera (2026) · Analyzing and Visualizing Data in Excel, Microsoft/edX (2020) · Bachelor of Arts in Economics, University of Calgary (2019)</p>
+				</div>
+			</section>
 
-							<header>
-								<h2>Contact</h2>
-							</header>
+			<section id="contact" class="four">
+				<div class="container">
+					<header>
+						<h2>Contact</h2>
+					</header>
+					<p>For project details or professional opportunities, connect through LinkedIn, GitHub, or email.</p>
+					<div class="contact-links">
+						<a class="button" href="https://www.linkedin.com/in/charminaybanez/">LinkedIn</a>
+						<a class="button" href="https://github.com/CharminaYbanez">GitHub</a>
+						<a class="button" href="mailto:charmina.ybanez@outlook.com">Email</a>
+					</div>
+				</div>
+			</section>
+		</main>
 
-							<form method="post" action="mailto:ybanezcharmina@outlook.com">
-								<div class="row">
-									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
-									<div class="col-12">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<input type="submit" value="Send Message" />
-									</div>
-								</div>
-							</form>
+		<div id="footer">
+			<ul class="copyright">
+				<li>&copy; Charmina Ybanez. All rights reserved.</li><li>Template basis: <a href="https://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
 
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<div id="footer">
-
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy;  M|NA. All rights reserved.</li><li>PROLOGUE by <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 	</body>
 </html>
