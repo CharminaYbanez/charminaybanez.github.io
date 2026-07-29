@@ -28,16 +28,26 @@
 			.project-card--featured h4 { font-size: 1.4rem; }
 			.project-card--featured img { max-height: 455px; object-fit: cover; object-position: top; }
 			.text-card { border-top: solid 4px #139ef3; }
+			.skill-card { border-top: solid 4px #139ef3; }
+			.credential-card { border-top: solid 4px #123e78; }
+			.skill-tags { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: 1rem; }
+			.skill-tag { background: #edf5fb; border: solid 1px #c9dfef; border-radius: 999px; color: #344653; font-size: .75rem; line-height: 1.2; padding: .4rem .7rem; }
+			.credential-card .project-copy { display: flex; flex-direction: column; min-height: 15rem; }
+			.credential-card p { flex-grow: 1; }
 			.contact-links { display: flex; flex-wrap: wrap; gap: .75rem; justify-content: center; }
 			.contact-links .button { margin: 0; }
-			.skills-list { font-size: .95rem; margin: 1.25rem auto 0; max-width: 800px; }
 			.intro-profile { align-items: center; display: flex; gap: 2.25rem; justify-content: center; margin: 0 auto; max-width: 58rem; text-align: left; }
 			.intro-profile-copy { max-width: 39rem; }
 			.hero-headshot { flex: 0 0 11rem; margin: 0; }
 			.hero-headshot img { border: .25rem solid rgba(255,255,255,.85); border-radius: 50%; box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.25); }
+			@media screen and (min-width: 961px) {
+				#nav ul li a span { align-items: center; display: flex; gap: .75rem; justify-content: flex-end; padding-right: 0; white-space: nowrap; }
+				#nav ul li a span:before { left: auto; line-height: 1.75em; margin-left: 0; order: 2; position: static; }
+			}
 			@media screen and (max-width: 736px) {
 				.project-group { margin-top: 3rem; }
 				.project-card--featured h4 { font-size: 1.2rem; }
+				.credential-card .project-copy { min-height: 0; }
 				.intro-profile { flex-direction: column-reverse; gap: 1.25rem; text-align: center; }
 				.hero-headshot { flex-basis: 9rem; width: 9rem; }
 			}
@@ -58,6 +68,7 @@
 					<ul>
 						<li><a href="#top" id="top-link"><span class="icon solid fa-home">Home</span></a></li>
 						<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-chart-bar">Projects</span></a></li>
+						<li><a href="#skills" id="skills-link"><span class="icon solid fa-certificate">Skills &amp; Credentials</span></a></li>
 						<li><a href="#about" id="about-link"><span class="icon solid fa-user">About</span></a></li>
 						<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
 					</ul>
@@ -83,7 +94,7 @@
 							<p><strong>Data Analyst | Economics | Business Intelligence</strong></p>
 							<p>I build clear, reproducible analysis using SQL, Python, Power BI, and Excel—grounded in data validation, stakeholder questions, and practical business communication.</p>
 						</header>
-						<span class="image hero-headshot"><img src="images/charmina-headshot.jpg" alt="Professional portrait of Charmina Ybanez" /></span>
+						<span class="image hero-headshot"><img src="images/charmina-headshot-2026.png" alt="Professional portrait of Charmina Ybanez" /></span>
 					</div>
 					<footer>
 						<a href="#portfolio" class="button scrolly">View projects</a>
@@ -105,9 +116,9 @@
 						<article class="item project-card project-card--featured">
 							<img src="images/alberta-home-insurance-dashboard.png" alt="Power BI executive dashboard for the Alberta Home Insurance Premium Pressure Monitor" />
 							<div class="project-copy">
-								<div class="eyebrow">SQL · Python · Power BI · 2016–2025</div>
+								<div class="eyebrow">SQL · Python · Power BI · 2026</div>
 								<h4>Alberta Home Insurance Premium Pressure Monitor</h4>
-								<p>A stakeholder-focused monitoring project assessing whether Alberta home insurance CPI growth diverged from inflation, national insurance trends, and selected cost and catastrophe context. Built with a SQLite warehouse, SQL quality checks, Python analysis, and a two-page Power BI dashboard.</p>
+								<p>A stakeholder-focused monitoring project using 2016–2025 data to assess whether Alberta home insurance CPI growth diverged from inflation, national insurance trends, and selected cost and catastrophe context. Built with a SQLite warehouse, SQL quality checks, Python analysis, and a two-page Power BI dashboard.</p>
 								<a class="button" href="https://github.com/CharminaYbanez/AnalyticsPortfolio">View GitHub project</a>
 							</div>
 						</article>
@@ -127,10 +138,10 @@
 								<article class="item project-card">
 									<a class="image fit" href="https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvYy9kYjY5ZGVjNjA5NmNiODM0L0lnQTB1R3dKeHQ1cElJRGI5MWtBQUFBQUFjVWl2Z1U2SGFhYkZBdHdwdkFJMTFJP2U9aWJ4Q252&amp;id=DB69DEC6096CB834%2123212&amp;cid=DB69DEC6096CB834&amp;sb=name&amp;sd=1"><img src="images/4.jpg" alt="Excel charts and analysis" /></a>
 									<div class="project-copy">
-										<div class="eyebrow">Technical Skills Showcase</div>
-										<h4>Advanced Excel Analytics Showcase</h4>
-										<p>Applied Excel techniques for financial modeling, project evaluation, scenario and sensitivity analysis, PivotTables, database management, and business reporting.</p>
-										<a class="button" href="https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvYy9kYjY5ZGVjNjA5NmNiODM0L0lnQTB1R3dKeHQ1cElJRGI5MWtBQUFBQUFjVWl2Z1U2SGFhYkZBdHdwdkFJMTFJP2U9aWJ4Q252&amp;id=DB69DEC6096CB834%2123212&amp;cid=DB69DEC6096CB834&amp;sb=name&amp;sd=1">View project folder</a>
+										<div class="eyebrow">Microsoft/edX DAT206x · 2020</div>
+										<h4>Advanced Excel Analytics Showcase — DAT206x</h4>
+										<p>Course-based analytics work completed through Microsoft/edX DAT206x, applying Excel to financial modeling, project evaluation, scenario and sensitivity analysis, PivotTables, data modeling, and business reporting.</p>
+										<a class="button" href="https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvYy9kYjY5ZGVjNjA5NmNiODM0L0lnQTB1R3dKeHQ1cElJRGI5MWtBQUFBQUFjVWl2Z1U2SGFhYkZBdHdwdkFJMTFJP2U9aWJ4Q252&amp;id=DB69DEC6096CB834%2123212&amp;cid=DB69DEC6096CB834&amp;sb=name&amp;sd=1">View course work</a>
 									</div>
 								</article>
 							</div>
@@ -203,14 +214,122 @@
 				</div>
 			</section>
 
-			<section id="about" class="three">
+			<section id="skills" class="three">
+				<div class="container">
+					<header>
+						<h2>Skills &amp; Credentials</h2>
+						<p>A practical toolkit for validating data, analyzing trends, building decision-focused reporting, and communicating results clearly.</p>
+					</header>
+
+					<div class="project-group">
+						<h3>Technical Toolkit</h3>
+						<p>Grouped by how the tools are applied in an analyst workflow.</p>
+						<div class="row">
+							<div class="col-4 col-12-mobile">
+								<article class="item project-card skill-card">
+									<div class="project-copy">
+										<div class="eyebrow">Query · Validate · Analyze</div>
+										<h4>Data Analysis &amp; SQL</h4>
+										<p>Structured querying, data modeling, joins, aggregation, quality checks, trend analysis, and sensitivity analysis.</p>
+										<div class="skill-tags" aria-label="Data analysis and SQL skills">
+											<span class="skill-tag">SQL</span>
+											<span class="skill-tag">SQLite</span>
+											<span class="skill-tag">Data validation</span>
+											<span class="skill-tag">Statistics</span>
+										</div>
+									</div>
+								</article>
+							</div>
+							<div class="col-4 col-12-mobile">
+								<article class="item project-card skill-card">
+									<div class="project-copy">
+										<div class="eyebrow">Prepare · Explore · Reproduce</div>
+										<h4>Python &amp; Analytical Workflow</h4>
+										<p>Data preparation, exploratory analysis, calculated metrics, visual checks, and reproducible analysis-ready exports.</p>
+										<div class="skill-tags" aria-label="Python and analytical workflow skills">
+											<span class="skill-tag">Python</span>
+											<span class="skill-tag">pandas</span>
+											<span class="skill-tag">NumPy</span>
+											<span class="skill-tag">Matplotlib</span>
+											<span class="skill-tag">JupyterLab</span>
+										</div>
+									</div>
+								</article>
+							</div>
+							<div class="col-4 col-12-mobile">
+								<article class="item project-card skill-card">
+									<div class="project-copy">
+										<div class="eyebrow">Model · Visualize · Communicate</div>
+										<h4>Business Intelligence &amp; Reporting</h4>
+										<p>Dashboard design, KPI development, data transformation, business reporting, and stakeholder-focused communication.</p>
+										<div class="skill-tags" aria-label="Business intelligence and reporting skills">
+											<span class="skill-tag">Power BI</span>
+											<span class="skill-tag">Excel</span>
+											<span class="skill-tag">Power Query</span>
+											<span class="skill-tag">PivotTables</span>
+											<span class="skill-tag">Dashboard design</span>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+
+					<div class="project-group">
+						<h3>Credentials &amp; Education</h3>
+						<p>Formal education and completed analytics training supporting the project evidence above.</p>
+						<div class="row">
+							<div class="col-6 col-12-mobile">
+								<article class="item project-card credential-card">
+									<div class="project-copy">
+										<div class="eyebrow">Professional Certificate · 2026</div>
+										<h4>Google Data Analytics Professional Certificate</h4>
+										<p>Google/Coursera training in analytical thinking, data preparation, analysis, visualization, and case-study communication.</p>
+										<a class="button" href="https://coursera.org/share/5d9d7cd72264e03116467b74fc4a7b80" target="_blank" rel="noopener">View credential</a>
+									</div>
+								</article>
+							</div>
+							<div class="col-6 col-12-mobile">
+								<article class="item project-card credential-card">
+									<div class="project-copy">
+										<div class="eyebrow">Certificate of Achievement · 2020</div>
+										<h4>Analyzing and Visualizing Data with Excel</h4>
+										<p>Microsoft/edX coursework covering advanced Excel analysis, data models, Power Query, Power Pivot, PivotTables, and business reporting.</p>
+										<a class="button" href="https://courses.edx.org/certificates/c7213b9943e4482888e5cecf68799228" target="_blank" rel="noopener">View certificate</a>
+									</div>
+								</article>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-6 col-12-mobile">
+								<article class="item project-card credential-card">
+									<div class="project-copy">
+										<div class="eyebrow">University of Calgary · 2019</div>
+										<h4>Bachelor of Arts in Economics</h4>
+										<p>Foundation in economic reasoning, quantitative research, statistics, policy analysis, and evidence-based interpretation.</p>
+									</div>
+								</article>
+							</div>
+							<div class="col-6 col-12-mobile">
+								<article class="item project-card credential-card">
+									<div class="project-copy">
+										<div class="eyebrow">University of Santo Tomas · 2011</div>
+										<h4>Bachelor of Fine Arts in Advertising</h4>
+										<p>Foundation in audience research, campaign strategy, visual communication, creative development, and presentation.</p>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="about" class="two">
 				<div class="container">
 					<header>
 						<h2>About</h2>
 					</header>
 					<p>I am a Calgary-based analyst with a Bachelor of Arts in Economics and experience across insurance, business operations, sales, and customer service. My project work focuses on turning structured data into practical decision support while documenting assumptions, data-quality checks, limitations, and next steps.</p>
-					<p class="skills-list"><strong>Technical foundations:</strong> SQL, SQLite, Python, pandas, NumPy, Power BI, Excel, statistics, dashboard design, data validation, and stakeholder communication.</p>
-					<p class="skills-list"><strong>Credentials:</strong> Google Data Analytics Professional Certificate, Google/Coursera (2026) · Analyzing and Visualizing Data in Excel, Microsoft/edX (2020) · Bachelor of Arts in Economics, University of Calgary (2019)</p>
 				</div>
 			</section>
 
