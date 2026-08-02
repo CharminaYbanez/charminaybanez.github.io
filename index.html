@@ -17,12 +17,15 @@
 			.project-group h3 { font-weight: 600; font-size: 1.25rem; margin-bottom: .5rem; }
 			.project-group > p { font-size: .95rem; margin-bottom: 1.75rem; }
 			.project-card { background: #fff; height: 100%; text-align: left; }
-			.project-card img { aspect-ratio: 16 / 9; object-fit: cover; }
+			.project-card img { aspect-ratio: 16 / 9; display: block; height: auto; max-width: 100%; object-fit: cover; width: 100%; }
 			.project-card .project-copy { padding: 1.35rem 1.5rem 1.5rem; }
 			.project-card h4 { color: #27313a; font-size: 1.1rem; font-weight: 600; line-height: 1.35; margin-bottom: .5rem; }
 			.project-card .eyebrow { color: #65717a; font-size: .78rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
 			.project-card p { font-size: .92rem; line-height: 1.55; margin: .65rem 0 1rem; }
 			.project-card a.button { font-size: .78rem; padding: .55rem 1.1rem; }
+			.project-card img.project-image--contain { background: #f4f7f8; object-fit: contain; padding: .35rem; }
+			.project-actions { display: flex; flex-wrap: wrap; gap: .65rem; }
+			.project-actions .button { margin: 0; }
 			.project-card--featured { box-shadow: 0 .2rem 1rem rgba(0,0,0,.12); }
 			.project-card--featured .project-copy { padding: 1.65rem 1.75rem 1.75rem; }
 			.project-card--featured h4 { font-size: 1.4rem; }
@@ -79,7 +82,7 @@
 				<ul class="icons">
 					<li><a href="https://github.com/CharminaYbanez" class="icon brands fa-github" aria-label="GitHub"><span class="label">GitHub</span></a></li>
 					<li><a href="https://www.linkedin.com/in/charminaybanez/" class="icon brands fa-linkedin" aria-label="LinkedIn"><span class="label">LinkedIn</span></a></li>
-					<li><a href="mailto:charmina.ybanez@outlook.com" class="icon solid fa-envelope" aria-label="Email"><span class="label">Email</span></a></li>
+					<li><a href="#contact" class="icon solid fa-envelope scrolly" aria-label="Go to contact options"><span class="label">Contact</span></a></li>
 				</ul>
 			</div>
 		</div>
@@ -98,7 +101,7 @@
 					</div>
 					<footer>
 						<a href="#portfolio" class="button scrolly">View projects</a>
-						<a href="assets/documents/charmina_ybanez_general_analytics_resume.pdf" class="button" target="_blank" rel="noopener">Download resume (PDF)</a>
+						<a href="assets/documents/charmina_ybanez_general_analytics_resume.pdf" class="button">View resume (PDF)</a>
 					</footer>
 				</div>
 			</section>
@@ -114,14 +117,43 @@
 						<h3>Featured Analytics</h3>
 						<p>End-to-end and business-focused analytics work.</p>
 						<article class="item project-card project-card--featured">
-							<img src="images/alberta-home-insurance-dashboard.png" alt="Power BI executive dashboard for the Alberta Home Insurance Premium Pressure Monitor" />
+							<img class="project-image--contain" src="images/alberta-home-insurance-dashboard.png" alt="Power BI executive dashboard for the Alberta Home Insurance Premium Pressure Monitor" />
 							<div class="project-copy">
 								<div class="eyebrow">SQL · Python · Power BI · 2026</div>
 								<h4>Alberta Home Insurance Premium Pressure Monitor</h4>
 								<p>A stakeholder-focused monitoring project using 2016–2025 data to assess whether Alberta home insurance CPI growth diverged from inflation, national insurance trends, and selected cost and catastrophe context. Built with a SQLite warehouse, SQL quality checks, Python analysis, and a two-page Power BI dashboard.</p>
-								<a class="button" href="https://github.com/CharminaYbanez/AnalyticsPortfolio">View GitHub project</a>
+								<a class="button" href="https://github.com/CharminaYbanez/AnalyticsPortfolio/tree/main/alberta-home-insurance" target="_blank" rel="noopener">View GitHub case study</a>
 							</div>
 						</article>
+						<div class="row">
+							<div class="col-6 col-12-mobile">
+								<article class="item project-card">
+									<a class="image fit" href="https://public.tableau.com/views/SuperstoreCommercialProfitabilityReview/Dashboard?:language=en-US&amp;:sid=&amp;:redirect=auth&amp;:display_count=n&amp;:origin=viz_share_link" target="_blank" rel="noopener"><img class="project-image--contain" src="images/superstore-profitability-dashboard.png" alt="Tableau dashboard for the Superstore Commercial Profitability Review" /></a>
+									<div class="project-copy">
+										<div class="eyebrow">SQL &middot; Python &middot; Tableau &middot; 2026</div>
+										<h4>Superstore Commercial Profitability Review</h4>
+										<p>Built a SQL, Python and Tableau profitability review using the fictitious Sample Superstore dataset to identify where sales volume did not translate into proportional profit across product mix, discount tiers and regions. Patterns are observational portfolio findings.</p>
+										<div class="project-actions">
+											<a class="button" href="https://public.tableau.com/views/SuperstoreCommercialProfitabilityReview/Dashboard?:language=en-US&amp;:sid=&amp;:redirect=auth&amp;:display_count=n&amp;:origin=viz_share_link" target="_blank" rel="noopener">View Tableau dashboard</a>
+											<a class="button" href="https://github.com/CharminaYbanez/AnalyticsPortfolio/tree/main/superstore-commercial-analytics" target="_blank" rel="noopener">View GitHub case study</a>
+										</div>
+									</div>
+								</article>
+							</div>
+							<div class="col-6 col-12-mobile">
+								<article class="item project-card">
+									<a class="image fit" href="https://github.com/CharminaYbanez/AnalyticsPortfolio/tree/main/healthcare-operations-cms" target="_blank" rel="noopener"><img class="project-image--contain" src="images/healthcare-ed-review-priority.png" alt="Bar chart showing healthcare review-priority hospitals by ED throughput flag type" /></a>
+									<div class="project-copy">
+										<div class="eyebrow">SQL &middot; Python &middot; Healthcare Analytics &middot; 2026</div>
+										<h4>Healthcare Operations Analytics</h4>
+										<p>Built a SQL and Python operational-screening workflow using CMS hospital data. After validating a SQLite hospital mart, ED-volume-tier 90th-percentile benchmarks identified 678 of 3,777 eligible hospitals as review-priority candidates, including 145 elevated on both throughput indicators.</p>
+										<div class="project-actions">
+											<a class="button" href="https://github.com/CharminaYbanez/AnalyticsPortfolio/tree/main/healthcare-operations-cms" target="_blank" rel="noopener">View GitHub case study</a>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
 						<div class="row">
 							<div class="col-6 col-12-mobile">
 								<article class="item project-card">
@@ -339,6 +371,7 @@
 						<h2>Contact</h2>
 					</header>
 					<p>For project details or professional opportunities, connect through LinkedIn, GitHub, or email.</p>
+					<p><strong>Email:</strong> <a href="mailto:charmina.ybanez@outlook.com">charmina.ybanez@outlook.com</a></p>
 					<div class="contact-links">
 						<a class="button" href="https://www.linkedin.com/in/charminaybanez/">LinkedIn</a>
 						<a class="button" href="https://github.com/CharminaYbanez">GitHub</a>
